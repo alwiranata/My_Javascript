@@ -48,11 +48,11 @@ carName = "Aldo Wiranata"
 var carName 
 console.log(carName)
 
-const angka = 1000
+const angka =1000
 
-if(angka > 1001 ){
+if(angka >= 1001 ){
     console.log("domba belum keluar")
-}else if(angka < 999 ){
+}else if(angka <= 999 ){
     console.log("Domba belum keluar")
 }else{
   console.log("Domba pink spawn")
