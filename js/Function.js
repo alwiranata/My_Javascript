@@ -39,7 +39,9 @@ console.log(text)
 
 function localVariabel (value1, value2){
     let myName = value1 + value2
+    console.log("log " + myName)
     return myName
 }
+localVariabel("aldo" , "Wiranata18")
 let name = localVariabel("aldo" ," wiranata")
 console.log(name)
