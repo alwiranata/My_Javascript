@@ -49,4 +49,6 @@ const myObj ={
 }
 
 const addProfile =  myObj.cars.car1
-console.log(addProfile)
+const addProfile1 =  myObj.cars["car1"]
+const addProfile2 = myObj["cars"]["car2"]
+console.log(addProfile , addProfile1 ,addProfile2)
