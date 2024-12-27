@@ -37,3 +37,16 @@ delete people["firstName"]
 console.log(people.age)
 console.log(people.firstName)
 
+//objek di dalam objek
+
+const myObj ={
+    nama : "Aldo",
+    age : 18,
+    cars : {
+        car1 : "BMW",
+        car2 : "Toyota"
+    }
+}
+
+const addProfile =  myObj.cars.car1
+console.log(addProfile)
