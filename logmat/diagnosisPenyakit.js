@@ -1,4 +1,4 @@
- // Aturan Inferensi
+// Aturan Inferensi
 const aturan = [
     { gejala: ["demam", "batuk"], hasil: "Flu" },
     { gejala: ["demam", "sakit kepala"], hasil: "Demam Berdarah" },
@@ -15,8 +15,11 @@ const diagnosis = (gejala) => {
     return "Tidak dapat didiagnosis";
 };
 
-// Contoh Penggunaan
-console.log(diagnosis(["demam", "batuk"])); // Output: Flu
-console.log(diagnosis(["demam", "sakit kepala"])); // Output: Demam Berdarah
-console.log(diagnosis(["batuk", "nyeri tenggorokan"])); // Output: Radang Tenggorokan
-console.log(diagnosis(["sakit perut"])); // Output: Tidak dapat didiagnosis
+// Input dari pengguna
+const prompt = require("prompt-sync")(); // Menggunakan prompt-sync untuk input pengguna
+
+const gejalaInput = prompt("Masukkan gejala (pisahkan dengan koma): ");
+const gejalaArray = gejalaInput.split(",").map((g) => g.trim().toLowerCase());
+
+// Menampilkan hasil diagnosis
+console.log(diagnosis(gejalaArray));
