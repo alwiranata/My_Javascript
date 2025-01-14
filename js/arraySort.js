@@ -24,3 +24,44 @@ cars.sort((p1 , p2) =>{
 })
 
 console.log(cars)
+
+const numbers = [45,4,9,19 ]
+const over18= numbers.filter(myFunction)
+
+function myFunction(value){
+    return value > 18
+}
+
+console.log(over18)
+
+
+const sum = numbers.reduce(myFunction10)
+
+function myFunction10(total,value){
+    return total + value
+}
+
+console.log(sum)
+
+
+const num2 = [10,20,9,30]
+let allOver18 = Array.from("adsko")
+
+function myFunction (value){
+    return value > 18
+}
+
+console.log(allOver18)
+
+
+
+const myFruits = ["Banana", "Orange", "Apple" ,"Mango"]
+
+let txt2= ""
+const keys = myFruits.entries()
+
+for(let x of keys){
+    txt2 += x
+}
+
+console.log(txt2)
